@@ -35,7 +35,7 @@
             app:borderWidth="0dp"
             app:layout_anchor="@id/viewPager"
             app:layout_anchorGravity="end|bottom"
-            app:layout_behavior="com.xiecc.seeWeather.modules.main.listener.FloatingActionButtonScrollBehavior"/>
+            app:layout_behavior="net.kang.MercyWeather.modules.main.listener.FloatingActionButtonScrollBehavior"/>
 
     </android.support.design.widget.CoordinatorLayout>
 
