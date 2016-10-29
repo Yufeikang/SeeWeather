@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xiecc.seeWeather">
+    package="net.kang.MercyWeather">
 
     <!--用于进行网络定位-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -22,7 +22,7 @@
     <uses-permission android:name="android.permission.READ_LOGS"/>
 
     <application
-        android:name="com.xiecc.seeWeather.base.BaseApplication"
+        android:name="net.kang.MercyWeather.base.BaseApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,11 +39,11 @@
             android:value="6c5241a92d395baa70c227300f5db822"/>
 
         <service android:name="com.amap.api.location.APSService"/>
-        <service android:name=".modules.service.AutoUpdateService"/>
+        <service android:name="net.kang.MercyWeather.modules.service.AutoUpdateService"/>
 
 
         <activity
-            android:name=".modules.launch.FirstActivity"
+            android:name="net.kang.MercyWeather.modules.launch.FirstActivity"
             android:theme="@style/FirstTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -51,20 +51,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".modules.main.ui.MainActivity"
+            android:name="net.kang.MercyWeather.modules.main.ui.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".modules.setting.ui.SettingActivity"
+            android:name="net.kang.MercyWeather.modules.setting.ui.SettingActivity"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name=".modules.city.ui.ChoiceCityActivity"
+            android:name="net.kang.MercyWeather.modules.city.ui.ChoiceCityActivity"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name=".modules.about.ui.AboutActivity"
+            android:name="net.kang.MercyWeather.modules.about.ui.AboutActivity"
             android:screenOrientation="portrait"
             />
     </application>
